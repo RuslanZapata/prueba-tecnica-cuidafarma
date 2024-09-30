@@ -48,6 +48,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: 18px;
           &__name{
             width: 148px;
             height: 28px;
@@ -149,6 +150,7 @@
           -o-border-radius: 12px;
           &__user{
             height: 64px;
+            gap: 28px;
             &__name{
               width: 231px;
               height: 45px;
@@ -173,8 +175,8 @@
             }
           }
           &__text{
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 16px;
+            line-height: 19px;
             height: 48px;
           }
         }

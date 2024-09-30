@@ -58,6 +58,12 @@
     &__menu{
       width: 484px;
       height: 237px;
+      &__title{
+        font-size: 16px;
+      }
+      &__item{
+        font-size: 15px;
+      }
     }
     &__description{
       width: 337px;

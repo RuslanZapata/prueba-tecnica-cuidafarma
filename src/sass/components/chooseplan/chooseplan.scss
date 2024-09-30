@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: 550px;
   margin: 45px auto 45px;
   
   &__top {
@@ -28,11 +27,12 @@
     column-gap: 15.85px;
     min-width: 375px;
     margin: 0 18px;
+    overflow-x: auto;
   }
 }
 
 .cards {
-  width: 173px;
+  min-width: 173px;
   height: 439px;
   border-radius: 10.93px;
   border: 1.09px solid #d3d3d3;

@@ -2,26 +2,41 @@ import Cards from "../../atoms/cards/cards";
 import "../../sass/components/chooseplan/chooseplan.scss";
 
 const ChoosePlan = () => {
-  const leftCard = [
-    "Unlimited bandwitch",
-    "Encrypted connection",
-    "Yes trafic logs",
-  ];
-  const centerCard = [
-    "Unlimited bandwitch",
-    "Encrypted connection",
-    "Yes trafic logs",
-    "Works on all devices",
-    "Connect anyware",
-  ];
-  const rightCard = [
-    "Unlimited bandwitch",
-    "Encrypted connection",
-    "Yes trafic logs",
-    "Works on all devices",
-    "Connect anyware",
-    "Get new features",
-  ];
+  const plans = [
+    {
+      title: "Free",
+      items: [
+        "Unlimited bandwitch",
+        "Encrypted connection",
+        "Yes trafic logs",
+      ],
+      preci: 'Free'
+    },
+    {
+      title: "Standard plan",
+      items: [
+        "Unlimited bandwitch",
+        "Encrypted connection",
+        "Yes trafic logs",
+        "Works on all devices",
+        "Connect anyware",
+      ],
+      preci: '9'
+    },
+    {
+      title: "Premium plan",
+      items: [
+        "Unlimited bandwitch",
+        "Encrypted connection",
+        "Yes trafic logs",
+        "Works on all devices",
+        "Connect anyware",
+        "Get new features",
+      ],
+      preci: '12'
+    },
+  ]
+
   return (
     <div className="choose-plan">
       <div className="choose-plan__top">
@@ -31,10 +46,10 @@ const ChoosePlan = () => {
           id purus ullamcorper. Vel vel erat semper augue.
         </div>
       </div>
-      <div className="choose-plan__bottom">
-        <Cards title="Free"items={leftCard} price="Free"/>
-        <Cards title="Standard plan" items={centerCard} price="9" />
-        <Cards title="Premium plan" items={rightCard} price="12" />
+      <div className="choose-plan__bottom">        
+        {plans.map(({title, items, preci}) => (
+          <Cards title={title} items={items} price={preci}/>
+        ))}
       </div>
     </div>
   );
