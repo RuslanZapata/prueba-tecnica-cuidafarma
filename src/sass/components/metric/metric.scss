@@ -1,0 +1,54 @@
+.metric{
+  width: 332px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bbbbbb;
+  padding: 20px 16px;
+  margin: 0 auto;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  &__item{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    &__data{
+      display: flex;
+      flex-direction: column;
+      strong{
+        font-size: 12px;        
+      }
+      span{
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .metric{
+    width: 820px;
+    height: 114px;
+    justify-content: space-around;
+    margin:  57px auto;
+    &__item{
+      gap: 23px;
+      svg{
+        width: 37px;
+        height: 37px;
+      }
+      &__data{
+        strong{
+          font-size: 20px;        
+        }
+        span{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

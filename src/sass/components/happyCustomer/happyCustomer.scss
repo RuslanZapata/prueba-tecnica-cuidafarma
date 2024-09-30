@@ -1,0 +1,197 @@
+.happyCustomer{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__description{
+    width: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 10px;
+    strong{
+      font-size: 17px;
+      padding: 0 55px;
+    }
+    span{
+      font-size: 9px;
+      padding: 0 4px;
+    }
+  }
+  &__slider{
+    height: 180px;
+    margin: 0 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &__container{
+      height: 129px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      &__item{
+        width: 258px;
+        height: 100%;
+        padding: 14px 24px;
+        border: 1px #8764C1 solid;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        &__user{
+          height: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &__name{
+            width: 148px;
+            height: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__warsaw{
+              height: 11px;
+              display: flex;
+              justify-content: space-between;
+              font-size: 10px;
+              align-items: center;
+              div{
+                width: 32px;
+                display: flex;
+                justify-content: space-between;
+                svg{
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+            }
+            strong{
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          img{
+            width: 40px;
+          }
+        }
+        &__text{
+          font-size: 10px;
+          line-height: 12px;
+          height: 48px;
+        }
+      }
+    }
+    &__controller{
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__option{
+        display: flex;
+        justify-content: space-between;
+        width: 78px;
+        svg{
+          height: 9px;
+        }
+      }
+      &__arrow{
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        svg{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .happyCustomer{
+    width: 1248px;
+    height: 451px;
+    margin: 0 auto 104px;
+    &__description{
+      width: 559px;
+      height: 165px;
+      margin: 0 auto;
+      gap: 10px;
+      strong{
+        width: 363px;
+        font-size: 30px;
+        padding: 0;
+      }
+      span{
+        font-size: 16px;
+        margin-bottom: 39px;
+      }
+    }
+    &__slider{
+      height: 274px;
+      margin: 0;
+      gap: 27px;
+      &__container{
+        height: 202px;
+        &__item{
+          width: 404px;
+          gap: 21px;
+          padding: 20px 38px;
+          border-radius: 12px;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          -ms-border-radius: 12px;
+          -o-border-radius: 12px;
+          &__user{
+            height: 64px;
+            &__name{
+              width: 231px;
+              height: 45px;
+              &__warsaw{
+                height: 18px;
+                font-size: 15px;
+                div{
+                  width: 48px;
+                  svg{
+                    width: 15px;
+                    height: 15px;
+                  }
+                }
+              }
+              strong{
+                font-size: 18px;
+                line-height: 21px;
+              }
+            }
+            img{
+              width: 64px;
+            }
+          }
+          &__text{
+            font-size: 10px;
+            line-height: 12px;
+            height: 48px;
+          }
+        }
+      }
+      &__controller{
+        height: 45px;
+        &__option{
+          width: 118px;
+        }
+        &__arrow{
+          width: 132px;
+          svg{
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
