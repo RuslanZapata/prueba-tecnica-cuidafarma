@@ -1,42 +1,8 @@
-import Cards from "../../atoms/cards/cards";
+import Cards from "../Cards/Cards";
 import "../../sass/components/chooseplan/chooseplan.scss";
+import { cardProps } from "../../core/constants";
 
 const ChoosePlan = () => {
-  const plans = [
-    {
-      title: "Free",
-      items: [
-        "Unlimited bandwitch",
-        "Encrypted connection",
-        "Yes trafic logs",
-      ],
-      preci: 'Free'
-    },
-    {
-      title: "Standard plan",
-      items: [
-        "Unlimited bandwitch",
-        "Encrypted connection",
-        "Yes trafic logs",
-        "Works on all devices",
-        "Connect anyware",
-      ],
-      preci: '9'
-    },
-    {
-      title: "Premium plan",
-      items: [
-        "Unlimited bandwitch",
-        "Encrypted connection",
-        "Yes trafic logs",
-        "Works on all devices",
-        "Connect anyware",
-        "Get new features",
-      ],
-      preci: '12'
-    },
-  ]
-
   return (
     <div className="choose-plan">
       <div className="choose-plan__top">
@@ -47,8 +13,8 @@ const ChoosePlan = () => {
         </div>
       </div>
       <div className="choose-plan__bottom">        
-        {plans.map(({title, items, preci}) => (
-          <Cards title={title} items={items} price={preci}/>
+        {cardProps.map(({title, items, price}, index) => (
+          <Cards key={index} title={title} items={items} price={price}/>
         ))}
       </div>
     </div>

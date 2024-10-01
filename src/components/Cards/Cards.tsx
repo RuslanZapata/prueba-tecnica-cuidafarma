@@ -1,11 +1,7 @@
-import React from "react";
 import Premim from "../../assets/Premium1.png";
 import TickCircle from "../../assets/icons/TickCircle";
-interface CardProps {
-  items: string[];
-  title: string;
-  price: string;
-}
+import { CardProps } from "../../core/types";
+
 const Cards: React.FC<CardProps> = ({ items, title, price }) => {
   return (
     <div className="cards">
